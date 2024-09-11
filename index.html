@@ -4,9 +4,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>american food</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mmenu.css">
 </head>
 <body>
+	<div class="page">
 	<header class="container">
+		<div class="mobile-menu">
+			<a href="#menu"><img width="20px" src="images/menu.png" alt=""><img width="20px" src="images/close.png" alt=""></a>
+
+		</div>
 		<div class="row">
 			<div class="table">
 				<div class="table-cell">
@@ -35,6 +41,16 @@
 	<div class="container header">
 		<div class="row">
 			<div class="table">
+				<nav id="menu">
+					<ul>
+						<li><a href="#" title="HOME">HOME</a></li>
+						<li><a href="#" title="ABOUT US">ABOUT US</a></li>
+						<li><a href="#" title="SERVICE">SERVICE</a></li>
+						<li><a href="#" title="PRICING">PRICING</a></li>
+						<li><a href="#" title="BLOG">BLOG</a></li>
+						<li><a href="#" title="CONTACT">CONTACT</a></li>
+					</ul>
+				</nav>
 				<nav>
 					<ul>
 						<li><a href="#" title="HOME">HOME</a></li>
@@ -341,6 +357,39 @@
 	</div>
 
  </section>
+</div>
+
+
+<script type="text/javascript" src="js/mmenu.js"></script>
+<script type="text/javascript">
+
+   
+ 		document.addEventListener('DOMContentLoaded', () => {
+
+									new Mmenu("#menu", {        navbar: {
+            title: "My contacts"
+        },
+        searchfield: {
+            add: true,
+            addTo: "#contacts"
+        },
+        offCanvas: {
+            position: "right-front"
+        }}, {});
+				
+							});
+
+
+
+
+</script>
+
+
+
+
+
+
+
 
 
 </body>

@@ -232,6 +232,23 @@ ul li a{
 	background: #8e3233;
 }
 
+.mobile-menu img:last-child,.mm-wrapper--opened .mobile-menu img:first-child{
+    display: none;
+}
+.mm-wrapper--opened .mobile-menu img:last-child{
+    display: block;
+}
+.mm-wrapper--opened nav#menu{
+    display: block;
+}
+nav#menu{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+}
+
+
 /*------------------section-2------*/
 .middle-2{
 	float: left;
@@ -1190,6 +1207,21 @@ ul li a{
 }
 
 @media(max-width: 979px){
+.header{
+	display: none;
+	position: relative;
+}
+.mobile-menu{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+    left: 10px;
+}
+
+
+
+
 .table-cell:first-child{
 	display: none;
 }
